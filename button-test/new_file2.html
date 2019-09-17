@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>隐藏功能</title>
+	</head>
+	<script type="text/javascript">
+		var isdisplay = false
+		function display(){
+			if(isdisplay==false){
+				document.getElementById("div").style.display = "none"
+				isdisplay = true
+				return
+			}
+			if (isdisplay==true){
+				document.getElementById("div").style.display = ""
+				isdisplay = false
+				return
+			}	
+		}
+	</script>
+	<body>
+		<div id="div" style="width: 300px;height: 400px; background-color: red;display: black;">
+		</div>
+		<button OnClick="display()">隐藏或者显示</button>
+		
+		<p style="width: 100px; height: 100px; background-color: pink;">
+			就是这么六
+		</p>
+	</body>
+</html>

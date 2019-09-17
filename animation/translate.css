@@ -1,0 +1,34 @@
+body,
+html {
+  background-color: #1d1f20;
+  color: #ffffff;
+}
+.box {
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  color: #000;
+  left: 150px;
+  top: 159px;
+  background-color: #fff;
+  transform-origin: 100px 100px 0;
+  -webkit-animation: sprint1 10s infinite ease-in;
+}
+@keyframes sprint1 {
+  0% {
+    transform-origin: 100px 100px 0;
+    transform: translate(-150px, 0px);
+  }
+  100% {
+    transform-origin: 60% 50% 0px;
+    transform: translate(1000px, 0px);
+  }
+}
+@keyframes sprint2 {
+  0% {
+    left: 0px;
+  }
+  100% {
+    left: 1000px;
+  }
+}

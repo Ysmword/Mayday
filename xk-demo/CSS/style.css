@@ -1,0 +1,81 @@
+html,body{
+    margin: 0;
+    padding: 0;
+}
+
+audio{
+    z-index: 5;  
+    /* z-index 设置元素的堆叠顺序，仅能在定位元素上凑效absolute */
+    position: absolute;
+    bottom: 0;
+    opacity: 0.1;
+    /* 不透明级别 */
+    transition: all 2s;
+    /* 动画效果 */
+}
+
+audio:hover{
+    opacity: 1;
+}
+
+.wall{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+div#background{
+    background: url("../img/preview.jpg") no-repeat;
+    animation: dd 100s linear infinite;
+    /* dd 为动画名称 100s表示动画播放时间 linear 动画从头到尾的速度是相同的*/
+    background-size: cover;
+}
+
+div#midground{
+    background: url("../img/midground.png");
+    /* 默认的放肆为填充 */
+    animation: cc 100s linear infinite;
+    z-index: 1;
+}
+
+div#foreground{
+    background: url("../img/ship.png") no-repeat;
+    animation: cc 13s linear infinite;
+    /* animation-direction: alternate; */
+    z-index: 2;
+}
+
+
+div#top{
+    background: url("../img/midground.png");
+    animation: da 100s linear infinite;
+    z-index: 4;
+}
+
+@keyframes dd {
+    0%{
+        background-position: 0 0;
+    }
+    100%{
+        background-position: 0 0;
+    }
+}
+
+@keyframes cc {
+    0%   { left:150px; top:0px;}
+    25%  { left:800px; top:0px;}
+    50%  { left:800px; top:500px; transform: rotate(30deg);}
+    75%  { left:200px; top:500px;transform: rotate(30deg);}
+    100% { left:200px; top:0px;}
+}
+
+@keyframes da {
+    0%{
+        background-position: 0 0;
+    }
+    100%{
+        background-position: 0 600%;
+    }
+}

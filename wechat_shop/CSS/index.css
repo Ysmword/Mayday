@@ -1,0 +1,27 @@
+/* .index_bj{
+    width: 100%;
+    max-width: 640px;
+    min-width: 320px;
+    margin: 0 auto;
+    text-align: center;
+} */
+
+.index_main{
+    width: 100%;
+    top: 85%;
+    /* 通过设置位置，将内容放在图片上 */
+    color: #fff;
+    position: absolute;
+    max-width: 640px;
+    min-width: 320px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.index_main p{
+    text-align:left;
+    font-size: 14px;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 20px;
+}

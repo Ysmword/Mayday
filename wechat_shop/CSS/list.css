@@ -1,0 +1,52 @@
+.one{
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.one-left,.one-right{
+    width: 49%;
+    border: #dedede 1px solid;
+    height: auto;
+    padding-bottom: 5px;
+    margin-top: 20px;
+}
+.one-left{
+    float: left;
+}
+.one-right{
+    float: right;
+}
+
+.one-text{
+    width: 95%;
+    margin: 10px auto;
+}
+
+.one-text h3{
+    font-size: 14px;
+    text-align: left;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    /* 这个属性由意思啊！：当超过宽度的时候，使用省略号显示 */
+
+}
+
+.one-text p{
+    text-align: left;
+    font-size: 14px;
+    color: #ff461f;
+    width: 100%;
+    float: left;
+    line-height: 30px;
+}
+
+
+.one-text p span{
+    font-size: 12px;
+    text-align: right;
+    /* 这个将两个文字分开了 */
+    color: #666;
+    float: right;
+}

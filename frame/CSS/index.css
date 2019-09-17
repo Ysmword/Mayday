@@ -1,0 +1,12 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin: 0 auto;
+    text-align: center;
+}
+/* 要将一个图片放置中间，必须要放在一个容器中才能实现将图片放在中间 */
+
+
